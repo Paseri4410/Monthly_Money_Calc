@@ -8,7 +8,7 @@ MONTHLY_YUINO_TO_COMMON_CONST = (90000)
 
 
 # 香斗が個人で払ったけど、共用で払うべき金額
-st.header("香斗が個人で払ったけど、共用で払うべき金額")
+st.subheader("香斗が個人で払ったけど、共用で払うべき金額")
 Yoshito_Paid_Receipt_num = st.number_input(
     "レシートの枚数",
     min_value=0,
@@ -28,7 +28,7 @@ Yoshito_Paid_Sum = sum(Yoshito_Paid_All)
 
 
 # 唯乃が個人で払ったけど、共用で払うべき金額
-st.header("唯乃が個人で払ったけど、共用で払うべき金額")
+st.subheader("唯乃が個人で払ったけど、共用で払うべき金額")
 Yuino_Paid_Receipt_num = st.number_input(
     "レシートの枚数",
     min_value=0,
@@ -48,7 +48,7 @@ Yuino_Paid_Sum = sum(Yuino_Paid_All)
 
 
 # 共用で払ったけど、香斗が個人で払うべき金額
-st.header("共用で払ったけど、香斗が個人で払うべき金額")
+st.subheader("共用で払ったけど、香斗が個人で払うべき金額")
 Common_Paid_Receipt_num_Yoshito = st.number_input(
     "レシートの枚数",
     min_value=0,
@@ -68,7 +68,7 @@ Common_Paid_Sum_Yoshito = sum(Common_Paid_All_Yoshito)
 
 
 # 共用で払ったけど、唯乃が個人で払うべき金額
-st.header("共用で払ったけど、唯乃が個人で払うべき金額")
+st.subheader("共用で払ったけど、唯乃が個人で払うべき金額")
 Common_Paid_Receipt_num_Yuino = st.number_input(
     "レシートの枚数",
     min_value=0,
